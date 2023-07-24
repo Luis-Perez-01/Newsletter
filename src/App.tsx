@@ -10,7 +10,7 @@ function App() {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (e: any) => {
+  const onSubmit = () => {
     setData(!data);
   };
 
@@ -50,7 +50,7 @@ function App() {
                 And much more!
               </li>
             </ul>
-            <form onSubmit={handleSubmit((data)=> onSubmit(data))}>
+            <form onSubmit={handleSubmit(()=> {onSubmit})}>
               <label htmlFor="Email" className="font-roboto-bold text-xs">
                 Email address
               </label>
