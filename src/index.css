@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Roboto-Bold";
+    src: url("./public/assets/fonts/Roboto-Bold.ttf");
+  }
+
+  @font-face {
+    font-family: "Roboto";
+    src: url("./public/assets/fonts/Roboto-Regular.ttf");
+  }
+}
+
+@counter-style list-check{
+    system: fixed;
+    symbols: url("./public/assets/images/icon-list.svg");
+    suffix: " ";
+}
